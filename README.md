@@ -9,23 +9,17 @@ go.m
 ## Paper
 Please cite he following papers if you use any substantial parts of the repository.
 
+**Non-Causal Tracking by Deblatting**,  
+D. Rozumnyi, J. Kotera, F. Sroubek, J. Matas, 
+GCPR 2019 [TBA]
 
-  ```
-  @article{RTC18,
-   title = {Fine-tuning {CNN} Image Retrieval with No Human Annotation},
-   author = {Radenovi{\'c}, F. and Tolias, G. and Chum, O.}
-   journal = {TPAMI},
-   year = {2018}
-  }
-  ```
-  ```
-  @inproceedings{RTC16,
-   title = {{CNN} Image Retrieval Learns from {BoW}: Unsupervised Fine-Tuning with Hard Examples},
-   author = {Radenovi{\'c}, F. and Tolias, G. and Chum, O.},
-   booktitle = {ECCV},
-   year = {2016}
-  }
-  ```
+**Intra-frame Object Tracking by Deblatting**,  
+J. Kotera, D. Rozumnyi, F. Sroubek, J. Matas, 
+VOT2019 at ICCV2019 [[arXiv](https://arxiv.org/abs/1905.03633)]
+
+**The World of Fast Moving Objects**,  
+D. Rozumnyi, J. Kotera, F. Sroubek, L. Novotny, J. Matas, 
+CVPR 2017 [[arXiv](https://arxiv.org/abs/1611.07889)]
 
 
 
