@@ -9,7 +9,25 @@ go.m
 ## Paper
 Please cite he following papers if you use any substantial parts of the repository.
 
-J. Kotera, D. Rozumnyi, F. Sroubek, J. Matas, “Intra-frame Object Tracking by Deblatting,” in 7th Visual Object Tracking Challenge Workshop (VOT2019) at ICCV2019.
+
+  ```
+  @article{RTC18,
+   title = {Fine-tuning {CNN} Image Retrieval with No Human Annotation},
+   author = {Radenovi{\'c}, F. and Tolias, G. and Chum, O.}
+   journal = {TPAMI},
+   year = {2018}
+  }
+  ```
+  ```
+  @inproceedings{RTC16,
+   title = {{CNN} Image Retrieval Learns from {BoW}: Unsupervised Fine-Tuning with Hard Examples},
+   author = {Radenovi{\'c}, F. and Tolias, G. and Chum, O.},
+   booktitle = {ECCV},
+   year = {2016}
+  }
+  ```
+
+
 
 
 ## Comments
