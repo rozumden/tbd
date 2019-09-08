@@ -11,7 +11,7 @@ classdef VideoWriterWrapper < handle
       function this = VideoWriterWrapper(folder, name, varargin)
          this = cmp_argparse(this, varargin);
          [~,b,~] = fileparts(name);
-         this.path = fullfile(folder,'results',[b '_result.avi']);
+         this.path = fullfile(folder,[b '_result.avi']);
          this.video = VideoWriter(this.path);
          this.video.FrameRate = this.fps;
          open(this.video);

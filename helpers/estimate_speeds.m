@@ -1,8 +1,9 @@
-function [srctable] = estimate_speeds(curves, r0, add_fctr)
+function [srctable,xx,yy] = estimate_speeds(curves, r0, add_fctr)
 if nargin < 3
 	add_fctr = '';
 end
 srctable = '';
+xx = []; yy = [];
 for ci = 1:numel(curves)
 	crv = curves(ci);
 	if strcmp(crv.type,'joint') || strcmp(crv.type,'prediction')
@@ -23,6 +24,11 @@ for ci = 1:numel(curves)
 		end
 
 		srctable = [srctable addplotB sprintf('({x%s},{(((%s)^2 + (%s)^2)^0.5)/%.4f}); \n',add_fctr,eq1,eq2,r0)];
+		xx0 = crv.fit_iv(1):0.2:(crv.fit_iv(2)+1);
+		xx = [xx xx0];
+		for x = xx0
+			yy = [yy norm(evaluate_dcoeff(cf, x))./r0];
+		end
 	elseif strcmp(crv.type,'bounce')
 		crv0 = curves(ci-1);
 		crv1 = curves(ci+1);
@@ -34,6 +40,9 @@ for ci = 1:numel(curves)
 
 		addplotB = sprintf('\\addplot [domain=%d:%d,color=purple]',t0,t1);
 		srctable = [srctable addplotB sprintf('({x%s},{(%.4f + %.4f*x)/%.4f}); \n',add_fctr,cf(1), cf(2),r0)];
+	
+		xx = [xx linspace(t0,t1,10)];
+		yy = [yy linspace(p0,p1,10)/r0];
 	elseif strcmp(crv.type,'connect')
 		disp('Skipping connect');
 	else

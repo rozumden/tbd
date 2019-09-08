@@ -1,6 +1,8 @@
 seq(4).low_contrast = 0;
 seq(1).no_gt = 1;
 
+figure;
+
 % if isempty(gcp('nocreate')), parpool(numel(inds)); end
 % parfor i = 1:numel(seq)
 for i = 1:numel(seq)
