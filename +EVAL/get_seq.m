@@ -4,8 +4,7 @@ if nargin < 2
 end
 seq = [];
 
-%% TODO: Change the folder with datasets 
-folder = '/mnt/lascar/rozumden/dataset';
+%% TODO: Change the folder for each datasets 
 
 if strcmp(lower(dset), 'fmo')
 	seq(numel(seq)+1).name = 'volleyball1.mp4';
@@ -40,6 +39,7 @@ if strcmp(lower(dset), 'fmo')
 	seq(end).resize = 1;
 	seq(numel(seq)+1).name = 'ping_pong_top.mp4';
 	seq(end).resize = 1;
+	folder = '/mnt/lascar/rozumden/dataset';
 elseif strcmp(lower(dset), 'tbd')
 	% New sequence from GoPro HERO 7 and improved GT in VS_throw_floor in frames with shadow
 	seq(numel(seq)+1).name = 'VS_badminton_white_GX010058-8.mat'; %% (equivalent to 30fps)
@@ -132,6 +132,7 @@ elseif strcmp(lower(dset), 'atp')
 	% 10
 	seq(numel(seq)+1).name = 'atp_serves.avi';
 	seq(end).start_frame = 566; seq(end).end_frame = 655;
+	folder = '/mnt/lascar/rozumden/dataset';
 else
 	error('Dataset not found');
 end	

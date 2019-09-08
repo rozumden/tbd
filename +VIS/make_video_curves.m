@@ -20,7 +20,7 @@ fps_use = min([25 fps]);
 
 txt_frms = round(1.2*fps_use);
 
-writer = VID.VideoWriterWrapper('~/projects/vis/', name, 'fps', fps_use);
+writer = VID.VideoWriterWrapper('./', name, 'fps', fps_use);
 tx = 45;
 ty = 45;
 font_size = 30;
