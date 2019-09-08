@@ -7,7 +7,7 @@ go.m
 ```
 
 ## Paper
-Please cite he following papers if you use any substantial parts of the repository.
+Please cite the following papers if you use any substantial parts of the repository.
 
 **Non-Causal Tracking by Deblatting**,  
 D. Rozumnyi, J. Kotera, F. Sroubek, J. Matas, 
