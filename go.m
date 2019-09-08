@@ -7,5 +7,5 @@ EVAL.run_tbd();
 %% Visualise results (make videos for supplementary material)
 VID.make_video_msc();
 
-%% Speed estimation (TODO: not debugged yet)
+%% Speed estimation
 EVAL.run_speeds();
