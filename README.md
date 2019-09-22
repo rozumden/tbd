@@ -11,7 +11,7 @@ Please cite the following papers if you use any substantial parts of the reposit
 
 **Non-Causal Tracking by Deblatting**,  
 D. Rozumnyi, J. Kotera, F. Sroubek, J. Matas, 
-GCPR 2019 [TBA]
+GCPR 2019 [[arXiv](https://arxiv.org/abs/1909.06894)]
 
 **Intra-frame Object Tracking by Deblatting**,  
 J. Kotera, D. Rozumnyi, F. Sroubek, J. Matas, 
