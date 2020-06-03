@@ -1,5 +1,5 @@
 # Tracking by Deblatting
-Implementation of Tracking by Deblatting (TbD and TbD-NC). For more recent Python/PyTorch implementation check https://github.com/rozumden/deblatting_python.
+Matlab implementation of Tracking by Deblatting (TbD and TbD-NC). For more recent Python/PyTorch implementation check https://github.com/rozumden/deblatting_python.
 
 ## To run (Matlab)
 ```
