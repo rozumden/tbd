@@ -96,6 +96,8 @@ classdef FastDetector < handle
 				fr.bgr_c = bgr(fr.bb(2):fr.bb(4),fr.bb(1):fr.bb(3),:);
 				fr.caseused='FMOd';
 				fr.fittingScore = [];
+				fr.M = double(diskMask([],ceil(fr.Radius+1)));
+				fr.f = double(repmat(fr.M, [1 1 3]));
 			end
 			this.proceed(im);
 		end
