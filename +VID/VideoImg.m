@@ -13,7 +13,7 @@ classdef VideoImg < VID.IVideo
    methods
       function this = VideoImg(folder, name, datasetname, varargin)
          this = cmp_argparse(this, varargin);
-         if ~exist('datasetname')
+         if nargin < 3
             datasetname = 'seq_img';
          end
          [~,nameseq,~] = fileparts(name);
