@@ -1,5 +1,5 @@
 if ~exist('params', 'var')
-	[params, cfg] = EVAL.get_params();
+	[params, cfg] = EVAL.get_params(true);
 end
 [seq, folder] = EVAL.get_seq(0,'FMO');
 
